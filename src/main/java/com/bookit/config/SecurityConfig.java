@@ -17,7 +17,7 @@ public class SecurityConfig {
         return http
                 .csrf(csrf -> csrf.disable()) // for REST + JWT (no browser session), no cookie authorization.
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // Because of JWT I don't need to remember states.
-                .authorizeHttpRequests(auth -> auth
+                .authorizeHttpRequests(auth -> auth //Creating permissions for HTTP requests
                         // PUBLIC
                         .requestMatchers(HttpMethod.GET, "/health").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/auth/register", "/api/auth/login").permitAll()
