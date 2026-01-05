@@ -1,4 +1,4 @@
-package com.bookit.bookit;
+package com.bookit;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

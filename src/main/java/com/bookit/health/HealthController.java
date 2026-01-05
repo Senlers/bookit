@@ -1,4 +1,4 @@
-package com.bookit.bookit.health;
+package com.bookit.health;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
