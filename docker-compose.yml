@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: bookit-postgres
+    environment:
+      POSTGRES_DB: bookit
+      POSTGRES_USER: bookit
+      POSTGRES_PASSWORD: bookit
+    ports:
+      - "5432:5432"
+    volumes:
+      - bookit_pgdata:/var/lib/postgresql/data
+
+volumes:
+  bookit_pgdata:

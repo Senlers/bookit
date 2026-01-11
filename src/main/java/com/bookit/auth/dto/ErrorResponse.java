@@ -4,22 +4,25 @@ import java.util.List;
 
 public class ErrorResponse {
 
+    private String error;
     private String timestamp;
     private int status;
     private String title;
     private String msg;
     private String path;
-    private List<FieldErrorDto> errors;
+    private List<FieldErrorDto> fieldErrors;
 
-    public ErrorResponse() {}
+    public ErrorResponse() {
+    }
 
-    public ErrorResponse(String timestamp, int status, String title, String msg, String path, List<FieldErrorDto> errors) {
+    public ErrorResponse(String error, String timestamp, int status, String title, String msg, String path, List<FieldErrorDto> fieldErrors) {
+        this.error = error;
         this.timestamp = timestamp;
         this.status = status;
         this.title = title;
         this.msg = msg;
         this.path = path;
-        this.errors = errors;
+        this.fieldErrors = fieldErrors;
     }
 
     public String getTimestamp() {
@@ -42,8 +45,12 @@ public class ErrorResponse {
         return path;
     }
 
-    public List<FieldErrorDto> getErrors() {
-        return errors;
+    public String getError() {
+        return error;
+    }
+
+    public List<FieldErrorDto> getFieldErrors() {
+        return fieldErrors;
     }
 
     public void setTimestamp(String timestamp) {
@@ -66,7 +73,11 @@ public class ErrorResponse {
         this.path = path;
     }
 
-    public void setErrors(List<FieldErrorDto> errors) {
-        this.errors = errors;
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    public void setFieldErrors(List<FieldErrorDto> fieldErrors) {
+        this.fieldErrors = fieldErrors;
     }
 }

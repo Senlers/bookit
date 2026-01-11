@@ -12,7 +12,7 @@ public class AuthResponse {
         this.tokenType=tokenType;
     }
 
-    public String getJwt() {
+    public String getToken() {
         return token;
     }
 
@@ -20,7 +20,7 @@ public class AuthResponse {
         return tokenType;
     }
 
-    public void setJwt(String jwt) {
+    public void setToken(String jwt) {
         this.token = jwt;
     }
 

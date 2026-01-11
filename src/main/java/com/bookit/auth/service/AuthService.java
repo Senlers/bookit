@@ -1,7 +1,11 @@
 package com.bookit.auth.service;
 
+import com.bookit.auth.dto.AuthResponse;
+
 public class AuthService {
-    public Object login(String mail, String secret) {
-        return null;
+
+    public AuthResponse login(String mail, String secret) {
+        return new AuthResponse();
     }
+
 }

@@ -2,7 +2,7 @@ package com.bookit.auth;
 
 import com.bookit.auth.controller.AuthController;
 import com.bookit.auth.dto.AuthResponse;
-import com.bookit.auth.exception.InvalidCredentialsException;
+import com.bookit.exception.InvalidCredentialsException;
 import com.bookit.auth.service.AuthService;
 import org.springframework.http.MediaType;
 import org.junit.jupiter.api.Test;
