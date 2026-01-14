@@ -1,4 +1,4 @@
-package com.bookit.auth.dto;
+package com.bookit.exception.dto;
 
 public class FieldErrorDto {
 

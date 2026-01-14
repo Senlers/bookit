@@ -1,4 +1,4 @@
-package com.bookit.auth.dto;
+package com.bookit.exception.dto;
 
 import java.util.List;
 

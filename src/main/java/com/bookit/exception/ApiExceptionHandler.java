@@ -1,6 +1,6 @@
 package com.bookit.exception;
 
-import com.bookit.auth.dto.ErrorResponse;
+import com.bookit.exception.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
